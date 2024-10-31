@@ -1,0 +1,367 @@
+ /** restando as propriedades do CSS Padrão**/
+* { 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Prociono", serif;
+}
+
+/** Cabeçalho para o Menu**/
+header{
+    background-color: #e8cd8a;
+    width: auto;
+    height: 40px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+    
+}
+
+li {
+margin: 0 15px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+html, body{
+    height: 100%; /** sempre a altura da pagina index.html seja 100%**/
+} 
+   
+
+ body{
+    background-color: #55b3f2;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh
+    /**garantir que o body ocuoe a altura total da página**/
+}
+
+main{
+    display: flex;
+        /**ira ocupar o espaço restante, permitindo que o rodapé agora fique no final**/
+    padding: 20px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+/**estilos de categorias de publicações das noticias**/
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 50px; /** irá adicionar uma distância de 50px entre as noticias**/
+}
+
+.noticia {
+    background-color: rgb(216, 225, 239);
+    width: 450px; /** largura para colocar a imagem**/
+    height: 450px; /** altura para colocar imagem**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(76, 74, 184);
+    font-size: 20px;
+    text-align: center;
+    color: #3e3cc5;
+
+}
+
+.noticia form div input {
+    background-color: #00B6D6;
+    width: 250px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.noticia p {
+    font-size: xx-large;
+}
+
+ .noticia h6{
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.area_cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+/** Estilo de Rodapé**/
+footer {
+    background-color: #4f4ce6;
+    color: #3aa7ef;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer hr{
+    border: 0;
+    height: 1px;
+    background-color: #3aa7ef;
+    margin-bottom: 10px;
+}
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+}
+
+
+/** Estilo da página planos **/
+.container_planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria_planos{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /** irá adicionar uma distância de 50px entre as noticias**/
+}
+
+.noticia_planos{
+    background-color: rgb(216, 225, 239);
+    border: 2px solid rgb(76, 74, 184);
+    padding: 20px;
+    
+} 
+
+.noticia_planos p{
+    color: #cf9868;
+    font-size: medium;
+}
+
+.noticia_planos li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.noticia_planos li a {
+    color: #3e3cc5;
+}
+
+.pagina_sobre {
+    display: block;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.sobre_titulo {
+    margin-bottom: 20px;
+}
+
+.sobre_titulo h1{
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+}
+.sobre_titulo h2{
+    font-size: xx-large;
+    padding-bottom: 5px;
+    color:#3e3cc5;
+}
+.sobre_titulo h3{
+    font-size:larger;
+    color: #fff;
+
+}
+.sobre_conteúdo h2{
+    font-size: xx-large;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #3e3cc5;
+}
+
+.sobre_missao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre_missao div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #3e3cc5;
+    text-align: center;
+    border-radius: 50%;
+   
+}
+
+.pagina_sobre {
+    display: block;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.sobre_titulo {
+    margin-bottom: 20px;
+}
+
+.sobre_titulo h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+}
+
+
+.sobre_titulo h3 {
+    font-size: larger;
+    color: #fff;
+
+}
+
+.sobre_conteúdo h2 {
+    font-size: xx-large;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #3e3cc5;
+}
+
+.sobre_missao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre_missao div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #3e3cc5;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.senha {
+    list-style: none;
+    font-size: small;
+}
+
+.senha a {
+    color: #3e3cc5;
+}
+
+.cadastre-se {
+    color: aliceblue;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #3aa7ef;
+}
+
+.form {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Missão, Visão, Valores */
+.about-mvv {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #333;  Cor de fundo igual ao menu */
+    padding: 50px 0;
+    color: #fff;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #3e3cc5;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+/* Imagem de fundo para os círculos */
+.mission {
+    background-image: url('missao.jpg');
+}
+
+.vision {
+    background-image: url('visao.jpg');
+}
+
+.values {
+    background-image: url('valores.jpg');
+}
+
+.circle h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaço entre o título e a frase */
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Para melhorar a visibilidade do texto */
+}
+
+.circle p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Para melhorar a visibilidade do texto */
+}
+
+/* Hover para destacar uma categoria */
+.circle:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    background-size: cover;
+}
+
+.circle:not(:hover) {
+    opacity: 0.7;
+}
+
+/* Imagem panorâmica */
+.about-image {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
